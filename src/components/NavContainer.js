@@ -1,40 +1,35 @@
+import logo from '../assets/logo.png'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavContainer() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#" className='d-flex' style={{alignItems:'center'}}>
+        <img src={logo} className="logo_navbar" alt="" />
+        <h3>DIBOOKING</h3>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" >
+          <div className='d-flex justify-content-center' style={{width:'100%'}}>
           <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
+            className='nav'
+            style={{ maxHeight: '100px'}}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            <Nav.Link href="#action1">Promosi</Nav.Link>
+            <Nav.Link href="#action2">Rekomendasi</Nav.Link>
+            <Nav.Link href="#action2">Kategori</Nav.Link>
+            <Nav.Link href="#action2">Tentang Kami</Nav.Link>
+
           </Nav>
+          </div>
           <Form className="d-flex">
-            <Button variant="outline-success">Search</Button>
+            <Button className='mx-3' variant="outline-success">Search</Button>
             <Button variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
