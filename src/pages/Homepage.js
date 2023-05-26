@@ -1,67 +1,162 @@
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel';
-import gambar1 from "../assets/gambar1.png";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import sale from "../assets/sale.png";
+import lpng from "../assets/lpng.jpeg";
+// import ec from "../assets/ec.png";
+import bola from "../assets/bola.png";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Card } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 
 function HomePage() {
   return (
     <div>
-      <div  className="d-flex flex-row mt-3 mb-3 px-5 justify-content-end">
-        <p style={{marginRight:'5px'}}>Lokasi : </p>
-      <NavDropdown  title= "jakarta" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            </NavDropdown>
-          
+      <div className="d-flex flex-row mt-3 mb-3 px-5 justify-content-end align-items-center" style={{backgroundColor:'#2F2E41',height:'64px',color:'white'}}>
+        <p style={{margin:'0',marginRight:'10px'}}>Lokasi : </p>
+        <NavDropdown title= <span style={{color:'white'}}>Jakarta</span>  id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        </NavDropdown>
       </div>
-        <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={gambar1}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://t-2.tstatic.net/medan/foto/bank/images/Contoh-gambar.jpg"
-          alt="Second slide"
-        />
+      <Carousel
+        fade
+        style={{
+          borderRadius: "20px",
+          maxHeight: "380px",
+          maxWidth: "1200px",
+          overflow: "hidden",
+          margin: "auto",
+        }}
+      >
+        <Carousel.Item style={{ height: "100%", width: "100%" }}>
+          <img className="d-block w-100" src={sale} alt="First slide" />
+        </Carousel.Item>
+      </Carousel>
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://disk.mediaindonesia.com/files/news/2022/12/30/WhatsApp%20Image%202022-12-22%20at%2017.07.10%20(1).jpg"
-          alt="Third slide"
-        />
+      <section
+        className="mt-5"
+        style={{
+          height: "fit-content",
+          maxWidth: "1200px",
+          overflow: "hidden",
+          margin: "auto",
+        }}
+      >
+        <h3 className="mb-4">Rekomendasi Lapangan</h3>
+        <div
+          className="wrapper"
+          style={{width: "100%",padding:'10px',display:'flex',gap:'15px',justifyContent:'center',alignItems:'center',flexWrap:'wrap'}}
+        >
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p>
+                  Jakarta Selatan
+                </p>
+              </Card.Text><Card.Text>
+                <p>
+                  4.8 | Tersewa
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p>
+                  Jakarta Selatan
+                </p>
+              </Card.Text><Card.Text>
+                <p>
+                  4.8 | Tersewa
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p>
+                  Jakarta Selatan
+                </p>
+              </Card.Text><Card.Text>
+                <p>
+                  4.8 | Tersewa
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p>
+                  Jakarta Selatan
+                </p>
+              </Card.Text><Card.Text>
+                <p>
+                  4.8 | Tersewa
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+      </section>
+      <section
+      className="mt-5"
+      style={{
+        display: 'flex',
+        height: "fit-content",
+        flexDirection: 'column',
+        maxWidth: "1200px", 
+        margin: "auto",
+        justifyContent:'center',
+        padding: "15px",
+      }}
+    >
+      <h3 style={{textAlign:'center', marginBottom:'20px'}}>
+        Kategori Lapangan
+      </h3>
+      <div className="cat_wrapper d-flex justify-content-evenly " style={{gap:'10px',justifyContent:''}}>
+      <img src={bola} style={{boxShadow:'4px 6px 10px rgba(0, 0, 0, 0.25)',borderRadius:'50%'}} className="" alt="" />
+      <img src={bola} style={{boxShadow:'4px 6px 10px rgba(0, 0, 0, 0.25)',borderRadius:'50%'}} className="" alt="" />
+      <img src={bola} style={{boxShadow:'4px 6px 10px rgba(0, 0, 0, 0.25)',borderRadius:'50%'}} className="" alt="" />
+      <img src={bola} style={{boxShadow:'4px 6px 10px rgba(0, 0, 0, 0.25)',borderRadius:'50%'}} className="" alt="" />
+      <img src={bola} style={{boxShadow:'4px 6px 10px rgba(0, 0, 0, 0.25)',borderRadius:'50%'}} className="" alt="" />
+      <img src={bola} style={{boxShadow:'4px 6px 10px rgba(0, 0, 0, 0.25)',borderRadius:'50%'}} className="" alt="" />
+      </div>
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-
+    </section>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
