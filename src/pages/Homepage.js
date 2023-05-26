@@ -1,10 +1,25 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import gambar1 from "../assets/gambar1.png";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function HomePage() {
   return (
     <div>
+      <div  className="d-flex flex-row mt-3 mb-3 px-5 justify-content-end">
+        <p style={{marginRight:'5px'}}>Lokasi : </p>
+      <NavDropdown  title= "jakarta" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            </NavDropdown>
+          
+      </div>
         <Carousel fade>
       <Carousel.Item>
         <img
@@ -44,6 +59,7 @@ function HomePage() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
     </div>
   )
 }
