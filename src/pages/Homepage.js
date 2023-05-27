@@ -2,11 +2,16 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import sale from "../assets/sale.png";
 import lpng from "../assets/lpng.jpeg";
-// import ec from "../assets/ec.png";
 import bola from "../assets/bola.png";
+import futsal from "../assets/futsal.png";
+import bulutangkis from "../assets/bulutangkis.png";
+import basket from "../assets/basket.png";
+import voli from "../assets/voli.png";
+import billiard from "../assets/billiard.png";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Card } from "react-bootstrap";
-// import { Container } from "react-bootstrap";
+import { FaStar } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 function HomePage() {
   return (
@@ -21,9 +26,9 @@ function HomePage() {
           title={<span style={{ color: "white" }}>Jakarta</span>}
           id="basic-nav-dropdown"
         >
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">Semarang</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Surabaya</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">ETC</NavDropdown.Item>
         </NavDropdown>
       </div>
       <Carousel
@@ -51,7 +56,7 @@ function HomePage() {
           margin: "auto",
         }}
       >
-        <h3 className="mb-4">Rekomendasi Lapangan</h3>
+        <h3 className="mb-4" style={{padding: '10px'}}>Rekomendasi Lapangan</h3>
         <div
           className="wrapper"
           style={{
@@ -81,36 +86,11 @@ function HomePage() {
               <Card.Text>
                 <h5>RP 75.000</h5>
               </Card.Text>
-              <Card.Text>
-                <p>Jakarta Selatan</p>
+              <Card.Text >
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
               </Card.Text>
               <Card.Text>
-                <p>4.8 | Tersewa</p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card style={{ maxWidth: "18rem", border: "0" }}>
-            <Card.Img
-              variant="top"
-              src={lpng}
-              style={{
-                borderRadius: "5px",
-                maxHeight: "165px",
-                maxWidth: "278px",
-              }}
-            />
-            <Card.Body style={{ padding: "0" }}>
-              <Card.Text>
-                <p>Jaksel Futsal</p>
-              </Card.Text>
-              <Card.Text>
-                <h5>RP 75.000</h5>
-              </Card.Text>
-              <Card.Text>
-                <p>Jakarta Selatan</p>
-              </Card.Text>
-              <Card.Text>
-                <p>4.8 | Tersewa</p>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -132,10 +112,10 @@ function HomePage() {
                 <h5>RP 75.000</h5>
               </Card.Text>
               <Card.Text>
-                <p>Jakarta Selatan</p>
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
               </Card.Text>
               <Card.Text>
-                <p>4.8 | Tersewa</p>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -157,15 +137,41 @@ function HomePage() {
                 <h5>RP 75.000</h5>
               </Card.Text>
               <Card.Text>
-                <p>Jakarta Selatan</p>
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
               </Card.Text>
               <Card.Text>
-                <p>4.8 | Tersewa</p>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem", border: "0" }}>
+            <Card.Img
+              variant="top"
+              src={lpng}
+              style={{
+                borderRadius: "5px",
+                maxHeight: "165px",
+                maxWidth: "278px",
+              }}
+            />
+            <Card.Body style={{ padding: "0" }}>
+              <Card.Text>
+                <p>Jaksel Futsal</p>
+              </Card.Text>
+              <Card.Text>
+                <h5>RP 75.000</h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
       </section>
+      
       <section
         className="mt-5"
         style={{
@@ -178,12 +184,12 @@ function HomePage() {
           padding: "15px",
         }}
       >
-        <h3 style={{ textAlign: "center", marginBottom: "20px" }}>
+        <h3 style={{ textAlign: "center", marginBottom: "50px" }}>
           Kategori Lapangan
         </h3>
         <div
           className="cat_wrapper d-flex justify-content-evenly "
-          style={{ gap: "10px", justifyContent: "" }}
+          style={{ gap: "10px", border: '1px solid black',}}
         >
           <img
             src={bola}
@@ -191,54 +197,128 @@ function HomePage() {
               boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
               borderRadius: "50%",
             }}
-            className=""
-            alt=""
+            className="bola"
+            alt="bola"
           />
           <img
-            src={bola}
+            src={futsal}
             style={{
               boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
               borderRadius: "50%",
             }}
-            className=""
-            alt=""
+            className="futsal"
+            alt="futsal"
           />
           <img
-            src={bola}
+            src={bulutangkis}
             style={{
               boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
               borderRadius: "50%",
             }}
-            className=""
-            alt=""
+            className="bulutangkis"
+            alt="bulutangkis"
           />
           <img
-            src={bola}
+            src={basket}
             style={{
               boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
               borderRadius: "50%",
             }}
-            className=""
-            alt=""
+            className="basket"
+            alt="basket"
           />
           <img
-            src={bola}
+            src={voli}
             style={{
               boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
               borderRadius: "50%",
             }}
-            className=""
-            alt=""
+            className="voli"
+            alt="voli"
           />
           <img
-            src={bola}
+            src={billiard}
             style={{
               boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
               borderRadius: "50%",
             }}
-            className=""
-            alt=""
+            className="billiard"
+            alt="billiard"
           />
+        </div>
+
+        <div
+          className="wrapper"
+          style={{width: "100%",padding:'10px',display:'flex',gap:'15px',justifyContent:'center',alignItems:'center',flexWrap:'wrap', marginTop: '170px'}}
+        >
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem",border:'0'}}>
+            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
+            <Card.Body style={{padding:'0'}}>
+              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+              <Card.Text>
+                <h5>
+                  RP 75.000
+                </h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
         </div>
       </section>
     </div>

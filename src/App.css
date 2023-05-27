@@ -8,9 +8,33 @@
   width: 50px;
 }
 
-/* @include media-breakpoint-up(xl) {
-  .nav {
-    max-width:100%;
-    background-color: 'blue' ;
+/* Responsive */
+@media screen and (max-width: 499px) {
+  .cat_wrapper {
+    max-width: 100%;
   }
-} */
+
+  .bola {
+    width: 100%;
+  }
+
+  .futsal {
+    width: 100%;
+  }
+
+  .bulutangkis {
+    width: 100%;
+  }
+
+  .basket {
+    width: 100%;
+  }
+
+  .voli {
+    width: 100%;
+  }
+
+  .billiard {
+    width: 100%;
+  }
+}

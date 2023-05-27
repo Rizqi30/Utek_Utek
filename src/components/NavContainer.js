@@ -14,23 +14,23 @@ function NavContainer() {
           className="d-flex"
           style={{ alignItems: "center" }}
         >
-          <img src={logo} className="logo_navbar" alt="" />
-          <h3>DIBOOKING</h3>
+          <img src={logo} className="logo_navbar" alt="logo" />
+          <h3>Dibooking</h3>
         </Navbar.Brand>
         <Navbar.Toggle id="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           {/* beberapa class tak hapus karena marai navbar e posisi ne ra nggenahb */}
-          <Nav className="mx-auto text-center">
+          <Nav className="ms-auto text-center">
             <Nav.Link href="#action1">Promosi</Nav.Link>
             <Nav.Link href="#action2">Rekomendasi</Nav.Link>
             <Nav.Link href="#action2">Kategori</Nav.Link>
             <Nav.Link href="#action2">Tentang Kami</Nav.Link>
           </Nav>
           <Form className="d-flex justify-content-center">
-            <Button className="mx-2" variant="outline-success">
-              Search
+            <Button className="mx-2" style={{backgroundColor: 'white', color: 'black'}}>
+              Masuk
             </Button>
-            <Button className="mx-2" variant="outline-success">
+            <Button className="mx-2" style= {{backgroundColor: '#FF7315'}}>
               Search
             </Button>
           </Form>
