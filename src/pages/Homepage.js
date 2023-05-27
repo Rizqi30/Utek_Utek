@@ -9,7 +9,7 @@ import basket from "../assets/basket.png";
 import voli from "../assets/voli.png";
 import billiard from "../assets/billiard.png";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Card } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
@@ -56,7 +56,9 @@ function HomePage() {
           margin: "auto",
         }}
       >
-        <h3 className="mb-4" style={{padding: '10px'}}>Rekomendasi Lapangan</h3>
+        <h3 className="mb-4" style={{ padding: "10px" }}>
+          Rekomendasi Lapangan
+        </h3>
         <div
           className="wrapper"
           style={{
@@ -86,36 +88,20 @@ function HomePage() {
               <Card.Text>
                 <h5>RP 75.000</h5>
               </Card.Text>
-              <Card.Text >
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card style={{ maxWidth: "18rem", border: "0" }}>
-            <Card.Img
-              variant="top"
-              src={lpng}
-              style={{
-                borderRadius: "5px",
-                maxHeight: "165px",
-                maxWidth: "278px",
-              }}
-            />
-            <Card.Body style={{ padding: "0" }}>
-              <Card.Text>
-                <p>Jaksel Futsal</p>
-              </Card.Text>
-              <Card.Text>
-                <h5>RP 75.000</h5>
-              </Card.Text>
-              <Card.Text>
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
-              </Card.Text>
-              <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -137,10 +123,19 @@ function HomePage() {
                 <h5>RP 75.000</h5>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -162,16 +157,60 @@ function HomePage() {
                 <h5>RP 75.000</h5>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem", border: "0" }}>
+            <Card.Img
+              variant="top"
+              src={lpng}
+              style={{
+                borderRadius: "5px",
+                maxHeight: "165px",
+                maxWidth: "278px",
+              }}
+            />
+            <Card.Body style={{ padding: "0" }}>
+              <Card.Text>
+                <p>Jaksel Futsal</p>
+              </Card.Text>
+              <Card.Text>
+                <h5>RP 75.000</h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
       </section>
-      
+
+      {/* Kategori Lapangan */}
       <section
         className="mt-5"
         style={{
@@ -187,135 +226,254 @@ function HomePage() {
         <h3 style={{ textAlign: "center", marginBottom: "50px" }}>
           Kategori Lapangan
         </h3>
-        <div
-          className="cat_wrapper d-flex justify-content-evenly "
-          style={{ gap: "10px", border: '1px solid black',}}
+        <Row
+          className="justify-content-md-center"
+          style={{ border: "1px solid black" }}
         >
-          <img
-            src={bola}
-            style={{
-              boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
-              borderRadius: "50%",
-            }}
-            className="bola"
-            alt="bola"
-          />
-          <img
-            src={futsal}
-            style={{
-              boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
-              borderRadius: "50%",
-            }}
-            className="futsal"
-            alt="futsal"
-          />
-          <img
-            src={bulutangkis}
-            style={{
-              boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
-              borderRadius: "50%",
-            }}
-            className="bulutangkis"
-            alt="bulutangkis"
-          />
-          <img
-            src={basket}
-            style={{
-              boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
-              borderRadius: "50%",
-            }}
-            className="basket"
-            alt="basket"
-          />
-          <img
-            src={voli}
-            style={{
-              boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
-              borderRadius: "50%",
-            }}
-            className="voli"
-            alt="voli"
-          />
-          <img
-            src={billiard}
-            style={{
-              boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
-              borderRadius: "50%",
-            }}
-            className="billiard"
-            alt="billiard"
-          />
-        </div>
+          <Col
+            md={4}
+            lg={2}
+            sm={6}
+            className="d-flex justify-content-center py-3"
+          >
+            <img
+              src={bola}
+              style={{
+                boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
+                borderRadius: "50%",
+              }}
+              className="img-fluid d-block"
+              alt="bola"
+            />
+          </Col>
+          <Col
+            md={4}
+            lg={2}
+            sm={6}
+            className="d-flex justify-content-center py-3"
+          >
+            <img
+              src={futsal}
+              style={{
+                boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
+                borderRadius: "50%",
+              }}
+              className="img-fluid d-block"
+              alt="bola"
+            />
+          </Col>
+          <Col
+            md={4}
+            lg={2}
+            sm={6}
+            className="d-flex justify-content-center py-3"
+          >
+            <img
+              src={bulutangkis}
+              style={{
+                boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
+                borderRadius: "50%",
+              }}
+              className="img-fluid d-block"
+              alt="bola"
+            />
+          </Col>
+          <Col
+            md={4}
+            lg={2}
+            sm={6}
+            className="d-flex justify-content-center py-3"
+          >
+            <img
+              src={basket}
+              style={{
+                boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
+                borderRadius: "50%",
+              }}
+              className="img-fluid d-block"
+              alt="bola"
+            />
+          </Col>
+          <Col
+            md={4}
+            lg={2}
+            sm={6}
+            className="d-flex justify-content-center py-3"
+          >
+            <img
+              src={voli}
+              style={{
+                boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
+                borderRadius: "50%",
+              }}
+              className="img-fluid d-block"
+              alt="bola"
+            />
+          </Col>
+          <Col
+            md={4}
+            lg={2}
+            sm={6}
+            className="d-flex justify-content-center py-3"
+          >
+            <img
+              src={billiard}
+              style={{
+                boxShadow: "4px 6px 10px rgba(0, 0, 0, 0.25)",
+                borderRadius: "50%",
+              }}
+              className="img-fluid d-block"
+              alt="bola"
+            />
+          </Col>
+        </Row>
 
         <div
           className="wrapper"
-          style={{width: "100%",padding:'10px',display:'flex',gap:'15px',justifyContent:'center',alignItems:'center',flexWrap:'wrap', marginTop: '170px'}}
+          style={{
+            width: "100%",
+            padding: "10px",
+            display: "flex",
+            gap: "15px",
+            justifyContent: "center",
+            alignItems: "center",
+            flexWrap: "wrap",
+            marginTop: "170px",
+          }}
         >
-          <Card style={{ maxWidth: "18rem",border:'0'}}>
-            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
-            <Card.Body style={{padding:'0'}}>
-              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+          <Card style={{ maxWidth: "18rem", border: "0" }}>
+            <Card.Img
+              variant="top"
+              src={lpng}
+              style={{
+                borderRadius: "5px",
+                maxHeight: "165px",
+                maxWidth: "278px",
+              }}
+            />
+            <Card.Body style={{ padding: "0" }}>
               <Card.Text>
-                <h5>
-                  RP 75.000
-                </h5>
+                <p>Jaksel Futsal</p>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+                <h5>RP 75.000</h5>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card style={{ maxWidth: "18rem",border:'0'}}>
-            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
-            <Card.Body style={{padding:'0'}}>
-              <Card.Text><p>Jaksel Futsal</p></Card.Text>
-              <Card.Text>
-                <h5>
-                  RP 75.000
-                </h5>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
-              </Card.Text>
-              <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card style={{ maxWidth: "18rem",border:'0'}}>
-            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
-            <Card.Body style={{padding:'0'}}>
-              <Card.Text><p>Jaksel Futsal</p></Card.Text>
-              <Card.Text>
-                <h5>
-                  RP 75.000
-                </h5>
-              </Card.Text>
-              <Card.Text>
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
-              </Card.Text>
-              <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card style={{ maxWidth: "18rem",border:'0'}}>
-            <Card.Img variant="top" src={lpng} style={{borderRadius:'5px',maxHeight:'165px',maxWidth:'278px'}}/>
-            <Card.Body style={{padding:'0'}}>
-              <Card.Text><p>Jaksel Futsal</p></Card.Text>
+          <Card style={{ maxWidth: "18rem", border: "0" }}>
+            <Card.Img
+              variant="top"
+              src={lpng}
+              style={{
+                borderRadius: "5px",
+                maxHeight: "165px",
+                maxWidth: "278px",
+              }}
+            />
+            <Card.Body style={{ padding: "0" }}>
               <Card.Text>
-                <h5>
-                  RP 75.000
-                </h5>
+                <p>Jaksel Futsal</p>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaMapMarkerAlt className="d-flex align-items-center" style={{color: '#FF7315', marginRight: '5px'}}/> Jakarta Selatan</p>
+                <h5>RP 75.000</h5>
               </Card.Text>
               <Card.Text>
-                <p className="d-flex align-items-center"><FaStar style={{color: '#FF7315', marginRight: '5px'}}/> 4.8 | Tersewa 27</p>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem", border: "0" }}>
+            <Card.Img
+              variant="top"
+              src={lpng}
+              style={{
+                borderRadius: "5px",
+                maxHeight: "165px",
+                maxWidth: "278px",
+              }}
+            />
+            <Card.Body style={{ padding: "0" }}>
+              <Card.Text>
+                <p>Jaksel Futsal</p>
+              </Card.Text>
+              <Card.Text>
+                <h5>RP 75.000</h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card style={{ maxWidth: "18rem", border: "0" }}>
+            <Card.Img
+              variant="top"
+              src={lpng}
+              style={{
+                borderRadius: "5px",
+                maxHeight: "165px",
+                maxWidth: "278px",
+              }}
+            />
+            <Card.Body style={{ padding: "0" }}>
+              <Card.Text>
+                <p>Jaksel Futsal</p>
+              </Card.Text>
+              <Card.Text>
+                <h5>RP 75.000</h5>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaMapMarkerAlt
+                    className="d-flex align-items-center"
+                    style={{ color: "#FF7315", marginRight: "5px" }}
+                  />{" "}
+                  Jakarta Selatan
+                </p>
+              </Card.Text>
+              <Card.Text>
+                <p className="d-flex align-items-center">
+                  <FaStar style={{ color: "#FF7315", marginRight: "5px" }} />{" "}
+                  4.8 | Tersewa 27
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
