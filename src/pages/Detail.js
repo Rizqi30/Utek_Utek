@@ -5,7 +5,7 @@ import { FaStar, FaMapMarkerAlt } from "react-icons/fa";
 function Detail() {
   return (
     <div>
-        <div className='hero' style={{padding:"20px", display:"flex", alignItems:"center", flexWrap:"wrap", justifyContent:"center",justifyContent:"center"}}>
+        <div className='hero' style={{padding:"20px", display:"flex", alignItems:"center", flexWrap:"wrap", justifyContent:"center"}}>
             <div className='mainhero' style={{maxWidth:"620px", padding:"10px"}}>
                 <img src={detail} alt='detail lapangan' style={{maxWidth:"100%"}} />
             </div>
@@ -40,6 +40,7 @@ function Detail() {
                 Lapangan Futsal Jakselmania
             </h2>
         </section>
+
     </div>
     
   )
