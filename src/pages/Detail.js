@@ -1,23 +1,44 @@
-import React from 'react'
+import React from "react";
 import detail from "../assets/detail.png";
 import { FaStar, FaMapMarkerAlt } from "react-icons/fa";
+import Rating from "../components/Rating/Rating";
+import "../styles/Detail.css";
 
 function Detail() {
   return (
     <div>
-        <div className='hero' style={{padding:"20px", display:"flex", alignItems:"center", flexWrap:"wrap", justifyContent:"center"}}>
-            <div className='mainhero' style={{maxWidth:"620px", padding:"10px"}}>
-                <img src={detail} alt='detail lapangan' style={{maxWidth:"100%"}} />
-            </div>
-            <div className='secondhero' style={{maxWidth:"310px", padding:"10px"}}>
-                <div style={{maxWidth:"410px"}}>
-                    <img src={detail} alt='detail lapangan' style={{width:"100%"}} />
-                </div>
-                <div>
-                    <img src={detail} alt='detail lapangan' style={{width:"100%"}} />
-                </div>
-            </div>
+      <div
+        className="hero"
+        style={{
+          padding: "20px",
+          display: "flex",
+          alignItems: "center",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          className="mainhero"
+          style={{ maxWidth: "620px", padding: "10px" }}
+        >
+          <img
+            src={detail}
+            alt="detail lapangan"
+            style={{ maxWidth: "100%" }}
+          />
         </div>
+        <div
+          className="secondhero"
+          style={{ maxWidth: "310px", padding: "10px" }}
+        >
+          <div style={{ maxWidth: "410px" }}>
+            <img src={detail} alt="detail lapangan" style={{ width: "100%" }} />
+          </div>
+          <div>
+            <img src={detail} alt="detail lapangan" style={{ width: "100%" }} />
+          </div>
+        </div>
+      </div>
 
         <section
             className="mt-1"
@@ -40,10 +61,8 @@ function Detail() {
                 Lapangan Futsal Jakselmania
             </h2>
         </section>
-
     </div>
-    
-  )
+  );
 }
 
-export default Detail
+export default Detail;

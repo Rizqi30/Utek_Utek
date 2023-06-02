@@ -226,9 +226,7 @@ function HomePage() {
         <h3 style={{ textAlign: "center", marginBottom: "50px" }}>
           Kategori Lapangan
         </h3>
-        <Row
-          className="justify-content-md-center"
-        >
+        <Row className="justify-content-md-center">
           <Col
             md={4}
             lg={2}
