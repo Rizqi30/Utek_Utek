@@ -228,7 +228,6 @@ function HomePage() {
         </h3>
         <Row
           className="justify-content-md-center"
-          style={{ border: "1px solid black" }}
         >
           <Col
             md={4}
