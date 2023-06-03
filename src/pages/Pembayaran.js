@@ -34,6 +34,7 @@ function Pembayaran() {
             </div>
             <p style={{fontWeight:"500"}}>Total Harga <span style={{display:"flex", justifyContent:"end"}}>Rp 75.000</span></p>
         </div>
+        <h2>Error</h2>
     </section>
   )
 }
