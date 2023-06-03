@@ -27,10 +27,18 @@ function NavContainer() {
             <Nav.Link href="#action2">Tentang Kami</Nav.Link>
           </Nav>
           <Form className="d-flex justify-content-center">
-            <Button className="mx-2" style={{backgroundColor: 'white', color: 'black'}}>
+            <Button
+              variant="none"
+              className="mx-2"
+              style={{ backgroundColor: "white", color: "black" }}
+            >
               Masuk
             </Button>
-            <Button className="mx-2" style= {{backgroundColor: '#FF7315'}}>
+            <Button
+              variant="none"
+              className="mx-2"
+              style={{ backgroundColor: "#FF7315" }}
+            >
               Daftar
             </Button>
           </Form>

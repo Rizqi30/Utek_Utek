@@ -2,6 +2,7 @@ import React from "react";
 import { BiUserCircle } from "react-icons/bi";
 import { GiSoccerField } from "react-icons/gi";
 import { BiMessageDetail } from "react-icons/bi";
+import { CiCircleAlert } from "react-icons/ci";
 import Ellipse from "../assets/Ellipse 17.png";
 import { FaMoneyBillWave } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
@@ -72,7 +73,7 @@ function Pembayaran() {
             overflow: "hidden",
             margin: "auto",
             borderBottom: "1px solid black",
-            paddingBottom:"10px"
+            paddingBottom: "10px",
           }}
         >
           <img
@@ -113,13 +114,18 @@ function Pembayaran() {
             </p>
           </div>
         </div>
-        <p style={{fontWeight:"500"}}>Total Harga <span style={{display:"flex", justifyContent:"end"}}>Rp 75.000</span></p>
+        <p style={{ fontWeight: "500" }}>
+          Total Harga{" "}
+          <span style={{ display: "flex", justifyContent: "end" }}>
+            Rp 75.000
+          </span>
+        </p>
       </div>
 
       {/* Content 3 */}
       <div
         className="container"
-        style={{ marginLeft: "7px", marginBottom: "90px", lineHeight: "10px"}}
+        style={{ marginLeft: "7px", marginBottom: "90px", lineHeight: "10px" }}
       >
         <p className="d-flex align-items-center" style={{ color: "#FF7315" }}>
           <FaMoneyBillWave
@@ -132,19 +138,79 @@ function Pembayaran() {
           />
           Pembayaran
         </p>
-        <p style={{fontSize:"13px", borderBottom:"1px solid black", paddingBottom:"10px"}}>Saldo DibookingPay : <strong>Rp 100.000,-</strong></p>
-        <div style={{display:"flex", flexDirection:"column", justifyContent:'end'}}></div>
-        <div style={{display:"flex", alignContent:"end", flexWrap:"wrap", flexDirection:"column", borderBottom:"1px solid black"}}>
-          <p>Status Lunas</p>
-          <p>Metode Pembayaran DibookingPay</p>
-          <p>Total Pembayaran Rp 75.000</p>
+        <p
+          style={{
+            fontSize: "13px",
+            borderBottom: "1px solid black",
+            paddingBottom: "10px",
+          }}
+        >
+          Saldo DibookingPay : <strong>Rp 100.000,-</strong>
+        </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "end",
+          }}
+        ></div>
+
+        {/* Bener */}
+        <div
+          style={{
+            display: "flex",
+            alignContent: "end",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            borderBottom: "1px solid black",
+          }}
+        >
+          <div style={{ width: "20rem" }}>
+            <div className="d-flex justify-content-between">
+              <p>Status</p>
+              <p>Lunas</p>
+            </div>
+            <div className="d-flex justify-content-between">
+              <p>Metode Pembayaran </p>
+              <p>DibookingPay</p>
+            </div>
+            <div className="d-flex justify-content-between">
+              <p>Total Pembayaran </p>
+              <p>Rp 75.000</p>
+            </div>
+          </div>
         </div>
-        <div style={{display:"flex", alignContent:"end", flexWrap:"wrap", flexDirection:"column"}}>
-          <Form className="d-flex justify-content-center" style={{padding:"20px"}}>
-            <Button className="mx-2" style={{backgroundColor: 'white', color: '#FF7315', width:"100px"}}>
+
+        <p
+          style={{ color: "red", fontSize: "12px" }}
+          className="d-flex align-items-center my-1"
+        >
+          <CiCircleAlert size={20} />
+          <span className="ms-1">Mohon selesaikan pembayaran secepatnya.</span>
+        </p>
+        <div
+          style={{
+            display: "flex",
+            alignContent: "end",
+            flexWrap: "wrap",
+            flexDirection: "column",
+          }}
+        >
+          <p></p>
+          <Form className="d-flex justify-content-center py-3">
+            <Button
+              variant="none"
+              className="mx-2"
+              style={{
+                backgroundColor: "white",
+                color: "#FF7315",
+                width: "100px",
+                padding: 0,
+              }}
+            >
               Batal
             </Button>
-            <Button className="mx-2" style= {{backgroundColor: '#FF7315'}}>
+            <Button variant="none" style={{ backgroundColor: "#FF7315" }}>
               Bayar Sekarang
             </Button>
           </Form>
