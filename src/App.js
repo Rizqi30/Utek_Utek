@@ -4,6 +4,7 @@ import NavContainer from './components/NavContainer';
 import Homepage from './pages/Homepage';
 import Detail from './pages/Detail';
 import Footer from './components/Footer';
+import Pembayaran from './pages/Pembayaran';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavContainer/>
       <Homepage/>
       <Detail/>
+      <Pembayaran/>
       <Footer/>
     </>
   );
