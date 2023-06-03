@@ -31,7 +31,7 @@ function NavContainer() {
               Masuk
             </Button>
             <Button className="mx-2" style= {{backgroundColor: '#FF7315'}}>
-              Search
+              Daftar
             </Button>
           </Form>
         </Navbar.Collapse>

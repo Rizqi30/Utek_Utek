@@ -3,6 +3,9 @@ import { BiUserCircle } from "react-icons/bi";
 import { GiSoccerField } from "react-icons/gi";
 import { BiMessageDetail } from "react-icons/bi";
 import Ellipse from "../assets/Ellipse 17.png";
+import { FaMoneyBillWave } from "react-icons/fa";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 function Pembayaran() {
   return (
@@ -41,8 +44,8 @@ function Pembayaran() {
 
       {/* Content 2 */}
       <div
-        className="container mb-5"
-        style={{ marginLeft: "7px", lineHeight: "1px" }}
+        className="container"
+        style={{ marginLeft: "7px", marginBottom: "90px", lineHeight: "10px" }}
       >
         <p className="d-flex align-items-center" style={{ color: "#FF7315" }}>
           <GiSoccerField
@@ -69,6 +72,7 @@ function Pembayaran() {
             overflow: "hidden",
             margin: "auto",
             borderBottom: "1px solid black",
+            paddingBottom:"10px"
           }}
         >
           <img
@@ -109,7 +113,42 @@ function Pembayaran() {
             </p>
           </div>
         </div>
-        <h2>Error</h2>
+        <p style={{fontWeight:"500"}}>Total Harga <span style={{display:"flex", justifyContent:"end"}}>Rp 75.000</span></p>
+      </div>
+
+      {/* Content 3 */}
+      <div
+        className="container"
+        style={{ marginLeft: "7px", marginBottom: "90px", lineHeight: "10px"}}
+      >
+        <p className="d-flex align-items-center" style={{ color: "#FF7315" }}>
+          <FaMoneyBillWave
+            style={{
+              color: "#FF7315",
+              marginRight: "5px",
+              height: "30px",
+              width: "30px",
+            }}
+          />
+          Pembayaran
+        </p>
+        <p style={{fontSize:"13px", borderBottom:"1px solid black", paddingBottom:"10px"}}>Saldo DibookingPay : <strong>Rp 100.000,-</strong></p>
+        <div style={{display:"flex", flexDirection:"column", justifyContent:'end'}}></div>
+        <div style={{display:"flex", alignContent:"end", flexWrap:"wrap", flexDirection:"column", borderBottom:"1px solid black"}}>
+          <p>Status Lunas</p>
+          <p>Metode Pembayaran DibookingPay</p>
+          <p>Total Pembayaran Rp 75.000</p>
+        </div>
+        <div style={{display:"flex", alignContent:"end", flexWrap:"wrap", flexDirection:"column"}}>
+          <Form className="d-flex justify-content-center" style={{padding:"20px"}}>
+            <Button className="mx-2" style={{backgroundColor: 'white', color: '#FF7315', width:"100px"}}>
+              Batal
+            </Button>
+            <Button className="mx-2" style= {{backgroundColor: '#FF7315'}}>
+              Bayar Sekarang
+            </Button>
+          </Form>
+        </div>
       </div>
     </section>
   );
