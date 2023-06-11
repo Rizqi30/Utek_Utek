@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage';
 import Detail from './pages/Detail';
 import Footer from './components/Footer';
 import Pembayaran from './pages/Pembayaran';
+import Order from './pages/Order';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Homepage/>
       <Detail/>
       <Pembayaran/>
+      <Order/>
       <Footer/>
     </>
   );
