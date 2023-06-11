@@ -196,7 +196,6 @@ function Pembayaran() {
             flexDirection: "column",
           }}
         >
-          <p></p>
           <Form className="d-flex justify-content-center py-3">
             <Button
               variant="none"
@@ -210,7 +209,7 @@ function Pembayaran() {
             >
               Batal
             </Button>
-            <Button variant="none" style={{ backgroundColor: "#FF7315" }}>
+            <Button variant="none" style={{ backgroundColor: "#FF7315", color: '#FFFFFF' }}>
               Bayar Sekarang
             </Button>
           </Form>
